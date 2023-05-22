@@ -12,7 +12,10 @@
   background: url(/resources/images/bg/bg1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: #FFFFFF;
+}
+.main .content {
+  position: absolute;
 }
 .main .aside {
   position: fixed;
