@@ -9,15 +9,33 @@
     height: 100vh;
     width: 100%;
     position: relative;
-    background: url(/resources/images/bg/bg1.jpeg); 
+    background: url(/resources/images/bg/trial.jpeg); 
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
-    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #141313;
+    
 
-    .content{
+    &::before{
+        content: '';
         position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(0,0, 0, .5);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), #141313);
     }
+    .floating{
+        position: absolute;
+        left: 60vw;
+        top: 10rem;
+        // border: 1px solid red;
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 1rem;
+        border-radius: 10px;
+        backdrop-filter: blur(7px);
+    }
+    
 
     .aside{
         position: fixed;
@@ -29,6 +47,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 5rem;
+        z-index: 1;
         .logo{
             img{
                 border-radius: 50%;
@@ -36,6 +55,10 @@
         }
 
         .hero__content{
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 1rem;
+            border-radius: 10px;
+            backdrop-filter: blur(7px);
             h3{
                 // font-weight: 700;
                 font-size: 2.5rem;
@@ -54,17 +77,21 @@
                 margin-top: 1.4rem;
                 padding: .4rem 2rem;
                 font-size: 1rem;
+                // color: transparent;
                 background-color: rgb(236, 167, 39);
                 mix-blend-mode: screen;
+                border-radius: 6px;
+                transition: .1s ease-in-out;
                 &:hover{
-                    background-color: rgb(248, 201, 112);
-                    transition: .3s ease-out;
+                    background-color: rgb(245, 225, 188);
+                    // transition: .3s ease-in-out;
+                    color: #141313;
                 }
             }
         }
 
         #location{
-            padding-top: 7rem;
+            padding-top: 5rem;
             opacity: .5rem;
         }
     }

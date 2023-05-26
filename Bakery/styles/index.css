@@ -9,13 +9,29 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url(/resources/images/bg/bg1.jpeg);
+  background: url(/resources/images/bg/trial.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
 }
-.main .content {
+.main::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), #141313);
+}
+.main .floating {
+  position: absolute;
+  left: 60vw;
+  top: 10rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
 }
 .main .aside {
   position: fixed;
@@ -27,9 +43,17 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 5rem;
+  z-index: 1;
 }
 .main .aside .logo img {
   border-radius: 50%;
+}
+.main .aside .hero__content {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
 }
 .main .aside .hero__content h3 {
   font-size: 2.5rem;
@@ -48,13 +72,15 @@
   font-size: 1rem;
   background-color: rgb(236, 167, 39);
   mix-blend-mode: screen;
+  border-radius: 6px;
+  transition: 0.1s ease-in-out;
 }
 .main .aside .hero__content #button:hover {
-  background-color: rgb(248, 201, 112);
-  transition: 0.3s ease-out;
+  background-color: rgb(245, 225, 188);
+  color: #141313;
 }
 .main .aside #location {
-  padding-top: 7rem;
+  padding-top: 5rem;
   opacity: 0.5rem;
 }
 .main #nav {
