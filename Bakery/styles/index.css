@@ -1,14 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:wght@400;500;700;800&family=Roboto+Slab:wght@300&display=swap");
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  border: none;
 }
 
 .main {
   height: 100vh;
-  width: 100%;
-  position: relative;
+  width: 100vw;
   background: url(/resources/images/bg/trial.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +24,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), #141313);
@@ -34,11 +40,11 @@
           backdrop-filter: blur(7px);
 }
 .main .aside {
-  position: fixed;
+  position: relative;
   left: 0;
   width: 40vw;
   height: 100%;
-  padding: 3rem;
+  padding: 3rem 3rem 0 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -76,15 +82,22 @@
   transition: 0.1s ease-in-out;
 }
 .main .aside .hero__content #button:hover {
-  background-color: rgb(245, 225, 188);
-  color: #141313;
+  background-color: rgb(36, 35, 33);
+  color: rgb(236, 167, 39);
 }
 .main .aside #location {
-  padding-top: 5rem;
+  padding-top: 0;
   opacity: 0.5rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main .aside #location #loco {
+  font-size: 1.5rem;
 }
 .main #nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 30vw;
   display: flex;
@@ -116,4 +129,176 @@
 .main #nav #icons ion-icon:hover {
   color: rgb(236, 167, 39);
   transition: 0.2s ease-in-out;
+}
+
+/*
+**
+**page 2
+*
+**/
+.page2 {
+  height: 100vh;
+  background: url(/resources/images/bg/pg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  margin: -1rem 0 0;
+  z-index: 1;
+}
+.page2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), #141313);
+}
+.page2 .small__nav {
+  padding: 4rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 999;
+}
+.page2 .small__nav .info {
+  width: 17%;
+  color: #A06235;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.page2 .small__nav .info #time {
+  font-size: 5.5rem;
+  padding-right: 1rem;
+  color: #A06235;
+}
+.page2 .small__nav h3 {
+  text-align: center;
+  color: #f78c40;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Playfair", serif;
+  text-transform: uppercase;
+  width: -moz-min-content;
+  width: min-content;
+  line-height: 2rem;
+}
+.page2 .small__nav .filter {
+  font-size: 0.8rem;
+}
+.page2 .small__nav .filter h6 {
+  font-size: 0.5rem;
+  opacity: 0.6;
+  padding-bottom: 1rem;
+}
+.page2 .small__nav .filter :nth-child(1) {
+  color: #f78c40;
+}
+.page2 .gallery {
+  padding: 1rem 10rem 0 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.page2 .gallery .box {
+  height: 31vh;
+  max-width: 14rem;
+  background-color: #1D1D1D;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 999;
+}
+.page2 .gallery .box:hover {
+  background-color: #A06235;
+  transition: 0.1s ease-out;
+}
+.page2 .gallery .box img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-bottom: -1rem;
+  background-color: #1D1D1D;
+  color: #1D1D1D;
+}
+.page2 .gallery .box .box__content {
+  display: flex;
+  padding: 0 0.5rem 1rem 0.5rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.page2 .gallery .box .box__content .float__left {
+  font-weight: 400;
+}
+.page2 .gallery .box .box__content .float__left span {
+  opacity: 0.5;
+}
+.page2 .gallery .box .box__content .float__left h4 {
+  opacity: 0.7;
+  font-size: 1rem;
+  font-family: "Roboto Slab", serif;
+}
+.page2 .gallery .box .box__content .float__right {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  justify-content: flex-end;
+}
+.page2 .gallery .box .box__content .float__right span {
+  opacity: 0.5;
+}
+.page2 .gallery .box .box__content .float__right ion-icon {
+  float: right;
+  font-size: 1.4rem;
+  opacity: 0.4;
+  align-self: flex-end;
+}
+.page2 .gallery .box .box__content .float__right #btn {
+  background: #f78c40;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.5rem;
+}
+.page2 .gallery .glass {
+  background-color: #A06235;
+  position: relative;
+}
+.page2 .gallery .glass #glass {
+  position: absolute;
+  top: 1.5rem;
+  width: 12rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0 1rem 0 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+.page2 .button {
+  position: absolute;
+  left: 50%;
+  margin: 2rem auto;
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  background: #f78c40;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  z-index: 10000;
+}
+.page2 .button:hover {
+  background: #A06235;
+  transition: 0.04s ease-out;
 }/*# sourceMappingURL=index.css.map */
