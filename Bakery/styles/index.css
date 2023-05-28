@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair:wght@400;500;700;800&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -7,8 +8,20 @@
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 img {
   border: none;
+}
+
+ion-icon {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 .main {
@@ -79,7 +92,7 @@ img {
   background-color: rgb(236, 167, 39);
   mix-blend-mode: screen;
   border-radius: 6px;
-  transition: 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .main .aside .hero__content #button:hover {
   background-color: rgb(36, 35, 33);
@@ -116,7 +129,7 @@ img {
 }
 .main #nav #sub__nav a:hover {
   color: rgb(241, 176, 54);
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .main #nav #icons {
   font-size: 1.7rem;
@@ -128,7 +141,7 @@ img {
 }
 .main #nav #icons ion-icon:hover {
   color: rgb(236, 167, 39);
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /*
@@ -217,7 +230,7 @@ img {
 }
 .page2 .gallery .box:hover {
   background-color: #A06235;
-  transition: 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 .page2 .gallery .box img {
   width: 8rem;
@@ -266,6 +279,11 @@ img {
   border-radius: 5px;
   padding: 0.4rem 0.5rem;
 }
+.page2 .gallery .box .box__content .float__right #btn:hover {
+  background-color: rgb(36, 35, 33);
+  transition: all 0.3s ease;
+  color: rgb(236, 167, 39);
+}
 .page2 .gallery .glass {
   background-color: #A06235;
   position: relative;
@@ -285,7 +303,7 @@ img {
 }
 .page2 .button {
   position: absolute;
-  left: 50%;
+  left: 45%;
   margin: 2rem auto;
   padding: 0.4rem 2rem;
   font-size: 1rem;
@@ -293,12 +311,265 @@ img {
   border: none;
   border-radius: 5px;
   align-items: center;
-  align-self: center;
-  justify-self: center;
   text-align: center;
-  z-index: 10000;
 }
 .page2 .button:hover {
   background: #A06235;
-  transition: 0.04s ease-out;
+  transition: all 4s ease-out;
+}
+
+/*
+**
+**page 3
+*
+*/
+.page3 {
+  background: url(/resources/images/bg/pag32.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  padding: 3rem;
+}
+.page3 .part1 {
+  background: #df7f3a;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.page3 .part1 .image_overflow {
+  width: 35%;
+}
+.page3 .part1 .image_overflow img {
+  background-color: transparent;
+  width: 20rem;
+  height: 20rem;
+}
+.page3 .part1 .mid {
+  width: 40%;
+  padding: 1rem;
+  color: black;
+}
+.page3 .part1 .mid h3 {
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.page3 .part1 .mid p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.page3 .part1 .mid .icons {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.page3 .part1 .mid .icons div {
+  padding: 0 1rem;
+}
+.page3 .part1 .mid .icons ion-icon {
+  font-size: 2rem;
+}
+.page3 .part1 .mid .icons img {
+  width: 3rem;
+  height: 3rem;
+}
+.page3 .part1 .mid .icons span {
+  font-size: 0.7rem;
+}
+.page3 .part1 .end {
+  width: 30%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  background-color: #A06235;
+}
+.page3 .part1 .end .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page3 .part1 .end .top img {
+  width: 8rem;
+  height: 8rem;
+  background-color: transparent;
+}
+.page3 .part1 .end .top .leftt {
+  padding: 2rem 1rem 1rem 1rem;
+  width: 60%;
+}
+.page3 .part1 .end .top .leftt p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.page3 .part1 .end .top .leftt span {
+  padding-top: 2rem;
+  opacity: 0.6;
+}
+.page3 .part1 .end #mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page3 .part1 .end #mid #left span {
+  opacity: 0.6;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.page3 .part1 .end #mid #left h4 {
+  font-size: 1.3rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+.page3 .part1 .end #mid #right {
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  background: #f78c40;
+  border: none;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+.page3 .part1 .end #mid #right:hover {
+  background-color: rgb(36, 35, 33);
+  transition: all 0.3s ease-in-out;
+  color: rgb(236, 167, 39);
+}
+.page3 .part1 .end #end {
+  padding: 0.7rem;
+}
+.page3 .part1 .end #end p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.page3 .part2 {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  border-radius: 10px;
+}
+.page3 .part2 .start {
+  padding: 2rem;
+  width: 35%;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-radius: 10px;
+}
+.page3 .part2 .start h3 {
+  font-size: 1.3rem;
+  font-family: "Roboto Slab", serif;
+}
+.page3 .part2 .start p {
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.page3 .part2 .start span {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #A06235;
+}
+.page3 .part2 .start .socials {
+  padding: 1rem 0 0 0;
+  margin-bottom: -2rem;
+}
+.page3 .part2 .start .socials ion-icon {
+  padding-right: 1rem;
+  color: #A06235;
+  font-size: 1.3rem;
+}
+.page3 .part2 .years {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  height: 23.5rem;
+  padding-right: 5rem;
+}
+.page3 .part2 .years h1 {
+  padding-top: 1rem;
+  color: #df7f3a;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 10rem;
+  margin-bottom: -2rem;
+}
+.page3 .part2 .years span {
+  font-size: 3rem;
+  color: #df7f3a;
+  margin-top: -3rem;
+}
+.page3 .part2 .oven {
+  width: 30%;
+  margin-left: -1rem;
+}
+.page3 .part2 .oven img {
+  width: 100%;
+  height: 23.5rem;
+}
+.page3 .part3 {
+  padding: 3rem;
+}
+.page3 .part3 .span {
+  padding: 0.4rem 25rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border: none;
+  background-color: #A06235;
+  color: black;
+  border-radius: 5px;
+  display: inline;
+}
+.page3 .part3 .span:hover {
+  background-color: rgb(36, 35, 33);
+  transition: all 0.1s ease;
+  color: rgb(236, 167, 39);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 3rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer h4 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+.footer .flow {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+.footer .flow span {
+  padding-bottom: 0.5rem 0;
+}
+.footer .flow span ion-icon {
+  padding-right: 0.7rem;
+}
+.footer h3 {
+  font-family: "Playfair", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.footer .floww {
+  display: flex;
+  font-family: "Pacifico", cursive;
+  align-items: center;
+  text-align: center;
+}
+.footer .floww h6 {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+.footer .follow span:hover {
+  transition: all 0.3s ease;
+  color: #df7f3a;
 }/*# sourceMappingURL=index.css.map */
