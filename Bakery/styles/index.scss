@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:wght@400;500;700;800&family=Roboto+Slab:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 $color-heading: #A06235;
 $black: #141313;
@@ -13,8 +13,20 @@ $black: #141313;
     scroll-behavior: smooth;
 }
 
+html{
+    overflow-y: scroll;
+}
+
 img{
     border: none;
+    
+    
+}
+ion-icon{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
 }
 
 .main{
@@ -97,7 +109,7 @@ img{
                 background-color: rgb(236, 167, 39);
                 mix-blend-mode: screen;
                 border-radius: 6px;
-                transition: .1s ease-in-out;
+                transition: all .3s ease-in-out;
                 &:hover{
                     background-color: rgb(36, 35, 33);
                     // transition: .3s ease-in-out;
@@ -143,7 +155,7 @@ img{
                 color: inherit;
                 &:hover{
                     color: rgb(241, 176, 54);
-                    transition: .2s ease-in-out;
+                    transition: all .2s ease-in-out;
                 }
             }
         }
@@ -159,7 +171,7 @@ img{
                 cursor: pointer;
                 &:hover{
                     color: rgb(236, 167, 39);
-                    transition: .2s ease-in-out;
+                    transition: all .2s ease-in-out;
                 }
             }
         }
@@ -272,7 +284,7 @@ img{
 
             &:hover{
                 background-color: #A06235;
-                transition: .1s ease-out;
+                transition: all .1s ease-out;
             }
 
             img{
@@ -332,6 +344,11 @@ img{
                         border: none;
                         border-radius: 5px;
                         padding: .4rem .5rem;
+                        &:hover{
+                            background-color: rgb(36, 35, 33);
+                            transition: all .3s ease;
+                            color: rgb(236, 167, 39);
+                        }
                     }
                 
                 }
@@ -366,7 +383,7 @@ img{
 
     .button{
         position: absolute;
-        left: 50%;
+        left: 45%;
         margin: 2rem auto;
         padding: .4rem 2rem;
         font-size: 1rem;
@@ -374,15 +391,324 @@ img{
         border: none;
         border-radius: 5px;
         align-items: center;
-        align-self: center;
-        justify-self: center;
+        // align-self: center;
+        // justify-self: center;
         text-align: center;
-        z-index: 10000;
+        // z-index: 10000;
 
         &:hover{
             background: #A06235;
-            transition: .04s ease-out;
+            transition: all 04s ease-out;
         }
     }
+}
+
+/*
+**
+**page 3
+*
+*/
+
+.page3 {
+    background: url(/resources/images/bg/pag32.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    padding: 3rem;
+
+    .part1{
+        background: #df7f3a;
+        // margin: 2rem;
+        height: 35vh;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        justify-content: space-between;
+
+        .image_overflow{
+            width: 35%;
+
+            img{
+                background-color: transparent;
+                // opacity: .4;
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+
+        .mid{
+            width: 40%;
+            padding: 1rem;
+            color: black;
+            h3 {
+                font-size: 2rem;
+                font-family:'Roboto Slab' ,serif;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            p{
+                font-size: .8rem;
+                font-weight: bold;
+                padding: 1rem;
+            }
+
+            .icons{
+                padding: 1rem 0;
+                display: flex;
+                align-items: center;
+                div{
+                    padding: 0 1rem;
+
+                    
+                }
+                ion-icon{
+                    font-size: 2rem;
+                }
+                img{
+                    width: 3rem;
+                    height: 3rem;
+                }
+                span{
+                    font-size: .7rem;
+                }
+            }
+        }
+
+        .end{
+            width: 30%;
+            padding: .8rem;
+            // background-color: rgba(255, 255, 255, 0.15);
+            // backdrop-filter: blur(3px);
+            border-radius: 5px;
+            background-color: #A06235;
+            .top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                img{
+                    width: 8rem;
+                    height: 8rem;
+                    background-color: transparent;
+                }
+
+                .leftt{
+                    padding: 2rem 1rem 1rem 1rem ;
+                    width: 60%;
+                    p{
+                        font-size: .8rem;
+                        font-weight: bold;
+                    }
+                    span{
+                        padding-top: 2rem;
+                        opacity: .6;
+                    }
+                }
+            }
+
+            #mid{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                #left{
+                    span{
+                        opacity: .6;
+                        font-size: .9rem;
+                        font-style: italic;
+                    }
+                    h4{
+                        font-size: 1.3rem;
+                        font-family: 'Roboto Slab', serif;
+                        font-weight: bold;
+                    }
+
+                }
+
+                #right{
+                    padding: .4rem 2rem;
+                    font-size: 1rem;
+                    background: #f78c40;
+                    border: none;
+                    border-radius: 5px;
+                    margin-right: 2rem;
+
+                    &:hover{
+                        background-color: rgb(36, 35, 33);
+                        transition: all .3s ease-in-out;
+                        color: rgb(236, 167, 39);
+                    }
+                }
+
+                
+
+            }
+
+            #end{
+                padding: .7rem;
+
+                p{
+                    font-size: .8rem;
+                    font-weight: bold;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+
+    .part2{
+        display: flex;
+        align-items: center;
+        padding-top: 3rem;
+        border-radius: 10px;
+
+        .start{
+            padding: 2rem;
+            width: 35%;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(7px);
+            border-radius: 10px;
+            
+            h3{
+                font-size: 1.3rem;
+                font-family:'Roboto Slab', serif;
+            }
+            p{
+                padding: 1rem 0;
+                font-size: .8rem;
+                font-weight: bold;
+
+            }
+            span{
+                font-size: .7rem;
+                font-weight: bold;
+                color: #A06235;
+            }
+            .socials{
+                padding: 1rem 0 0 0;
+                margin-bottom: -2rem;
+
+                ion-icon{
+                    padding-right: 1rem;
+                    color: #A06235;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .years{
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(7px);
+            height: 23.5rem;
+            padding-right: 5rem;
+
+            h1{
+                padding-top: 1rem;
+                color: #df7f3a;
+                font-family: 'Roboto Slab', serif;
+                font-weight: 700;
+                font-size: 10rem;
+                margin-bottom: -2rem;
+
+                
+            }
+            span{
+                font-size: 3rem;
+                color: #df7f3a;
+                margin-top: -3rem;
+            }
+            
+        }
+
+        .oven{
+            width: 30%;
+            margin-left: -1rem;
+            // z-index: 99;
+
+            img{
+                width: 100%;
+                height: 23.5rem;
+            }
+        }
+    }
+
+    .part3{
+        padding: 3rem;
+        .span{
+            padding: .4rem 25rem;
+            font-family:'Roboto Slab', serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            border: none;
+            background-color: #A06235;
+            color: black;
+            border-radius: 5px;
+            display: inline;
+
+            &:hover{
+                background-color: rgb(36, 35, 33);
+                transition: all .1s ease;
+                color: rgb(236, 167, 39);
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 3rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h4{
+        text-align: center;
+        font-family: 'Roboto Slab',serif;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .flow{
+        display: flex;
+        flex-direction: column;
+        font-size: .9rem;
+        
+        span{
+            padding-bottom: .5rem 0;
+
+            ion-icon{
+                padding-right: .7rem;
+            }
+        }
+    }
+    h3{
+        font-family: 'Playfair',serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    .floww{
+        display: flex;
+        font-family: 'Pacifico', cursive;
+        align-items: center;
+        text-align: center;
+        h6{
+            font-size: 2rem;
+            padding: 0 1rem;
+        }
+
+    }
+    .follow{
+        span:hover{
+            
+            // background-color: rgb(36, 35, 33);
+            transition:all .3s ease;
+            color: #df7f3a;
+            
+        }
+    }
+
+
 }
 
