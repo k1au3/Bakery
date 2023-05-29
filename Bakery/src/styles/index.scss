@@ -362,6 +362,7 @@ button{
             position: relative;
 
             #glass{
+                display: none;
                 position: absolute;
                 top: 1.5rem;
                 width: 12rem;
@@ -711,4 +712,29 @@ button{
 
 
 }
+
+
+
+
+
+/*
+**
+** @media breakpoints
+*
+*/
+
+// @media  (min-width: 480px) {
+//     .main{
+//         background-position: left;
+//         font-size: 1rem;
+
+//         .aside{
+//             width: 30%;
+//         }
+
+//         #nav{
+//             display: none;
+//         }
+//     }
+// }
 
