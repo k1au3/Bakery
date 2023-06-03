@@ -27,7 +27,7 @@ button {
 .main {
   height: 100vh;
   width: 100vw;
-  background: url(/resources/images/bg/trial.jpeg);
+  background: url(/App/resources/images/bg/trial.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
@@ -151,7 +151,7 @@ button {
 **/
 .page2 {
   height: 100vh;
-  background: url(/resources/images/bg/pg2.jpg);
+  background: url(/App/resources/images/bg/pg2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,7 +325,7 @@ button {
 *
 */
 .page3 {
-  background: url(/resources/images/bg/pag32.jpg);
+  background: url(/App/resources/images/fire1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -333,7 +333,7 @@ button {
 }
 .page3 .part1 {
   background: #df7f3a;
-  height: 35vh;
+  height: 38vh;
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -393,8 +393,8 @@ button {
   align-items: center;
 }
 .page3 .part1 .end .top img {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   background-color: transparent;
 }
 .page3 .part1 .end .top .leftt {
@@ -486,7 +486,7 @@ button {
   background-color: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
-  height: 23.5rem;
+  height: 22.5rem;
   padding-right: 5rem;
 }
 .page3 .part2 .years h1 {
