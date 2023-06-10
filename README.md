@@ -2,7 +2,7 @@
 
 ## inspiration
 
-![Little Red Hen](/App/resources/readme-img/readme.png)
+![Little Red Hen](/resources/readme-img/readme.png)
 
 
 
