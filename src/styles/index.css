@@ -27,7 +27,7 @@ button {
 .main {
   height: 100vh;
   width: 100vw;
-  background: url(/App/resources/images/bg/trial.jpeg);
+  background: url(/resources/images/bg/trial.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
@@ -151,7 +151,7 @@ button {
 **/
 .page2 {
   height: 100vh;
-  background: url(/App/resources/images/bg/pg2.jpg);
+  background: url(/resources/images/bg/pg2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,7 +325,7 @@ button {
 *
 */
 .page3 {
-  background: url(/App/resources/images/fire1.jpg);
+  background: url(/resources/images/fire1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
